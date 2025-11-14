@@ -74,22 +74,23 @@ Install/uninstall scripts for easy NSSM deployment:
 ### 1. Clone the repo:
 ```powershell
 git clone https://github.com/oreliousw/monero-node-windows-strict.git
-
-monero-cli/
+monero-node-windows-strict/
+│
+├── README.md
+├── .gitignore
 │
 ├── scripts/
-│     ├── StartMoneroService.ps1
-│     ├── StartXMRigService.ps1
-│     ├── DailyStatus.ps1
-│     ├── CleanupOldMoneroMonitors.ps1
-│     └── ValidateEnvironment.ps1   (optional)
+│   ├── StartMoneroService.ps1
+│   ├── StartXMRigService.ps1
+│   ├── DailyStatus.ps1
+│   ├── CleanupOldMoneroMonitors.ps1
 │
-├── xmrig/
-│     ├── xmrig.exe
-│     └── config.json
+├── config/
+│   ├── config.json          (XMRig)
+│   └── mining_pools.md
 │
-├── services/
-│     ├── nssm-monero-node.md
-│     └── nssm-xmrig-service.md
-│
-└── README.md
+└── services/
+    ├── install_monero_service.ps1
+    ├── install_xmrig_service.ps1
+    └── uninstall_all_services.ps1
+
