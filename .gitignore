@@ -1,0 +1,33 @@
+# PowerShell logs
+*.log
+*.txt
+*.bak
+
+# XMRig binaries
+xmrig.exe
+xmrig.dll
+xmrig.pdb
+
+# Monero data directory (LMDB)
+bitmonero/
+lmdb/
+*.mdb
+
+# NSSM service files
+*.nssm
+
+# Config files containing wallet addresses
+config.json
+
+# VSCode / local editors
+.vscode/
+*.code-workspace
+
+# Windows system junk
+Thumbs.db
+desktop.ini
+
+# Temporary
+tmp/
+temp/
+*.tmp
