@@ -31,6 +31,40 @@ Everything in this repo follows strict rules:
 This prevents unexpected behavior and makes your node predictable.
 
 ---
+# Monero Node + XMRig (Windows Strict-Mode Setup)
+
+This repository contains the complete **Strict-Mode** Windows automation stack for running:
+
+- A local Monero full node (monerod)
+- XMRig CPU mining
+- Daily health-status reporting
+- Auto-restart monitoring
+- Zero surprise settings
+- SNS notifications (optional)
+
+Designed for:
+✔️ Security  
+✔️ Stability  
+✔️ Clean automation  
+✔️ No unexpected defaults  
+
+---
+
+## 📦 What’s Included
+
+### **1. Strict-Mode Services**
+| Component | Description |
+|----------|-------------|
+| `StartMoneroService.ps1` | Launches monerod with hard-coded safe parameters |
+| `StartXMRigService.ps1` | Starts XMRig CPU miner under strict rules |
+| `DailyStatus.ps1` | Sends a daily email summary (via SNS) |
+| `CleanupOldMoneroMonitors.ps1` | Removes legacy monitors/tasks |
+| `install-nssm-services.ps1` | Installs services using NSSM |
+
+---
+
+## 📁 Folder Structure
+
 
 ## 📁 Folder Overview
 
