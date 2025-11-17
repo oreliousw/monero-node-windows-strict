@@ -128,3 +128,30 @@ monero-node-windows-strict/
     ├── install_xmrig_service.ps1
     └── uninstall_all_services.ps1
 
+monero-node-windows-strict/
+│
+├── README.md                    # Keep as legacy Windows doc
+├── archive/
+│   └── windows/                 # All old PS scripts, NSSM, etc.
+│
+├── linux/
+│   ├── README_linux.md          # New Linux documentation
+│   ├── scripts/
+│   │   ├── start_node.sh
+│   │   ├── start_miner.sh
+│   │   ├── stop_all.sh
+│   │   ├── healthcheck.sh
+│   │   └── send_sns.py          # Python SNS sender (optional)
+│   │
+│   ├── systemd/
+│   │   ├── monerod-tmux.service
+│   │   └── xmrig-tmux.service
+│   │
+│   ├── config/
+│   │   ├── xmrig.json           # clean miner config template
+│   │   └── monero.conf          # optional advanced flags
+│   │
+│   └── tools/
+│       └── tmux_helpers.md      # cheat-sheet for tmux usage
+│
+└── .gitignore
