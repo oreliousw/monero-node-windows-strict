@@ -1,0 +1,12 @@
+[Unit]
+Description=Monero Node in tmux
+After=network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/home/ubuntu/monero-node-tools/start_node.sh
+ExecStop=/usr/bin/tmux kill-session -t node
+
+[Install]
+WantedBy=multi-user.target
